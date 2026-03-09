@@ -1,0 +1,307 @@
+/* GENERAL */
+
+body{
+font-family: 'Segoe UI', sans-serif;
+margin:0;
+background:#f5f7fa;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:#1e3c72;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+}
+
+header h1{
+margin:0;
+font-size:24px;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffb347;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+color:white;
+
+/* Lonavala background */
+
+background:url("images/lonavala.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+
+/* gradient animation */
+
+@keyframes gradientMove{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+position:relative;
+color:white;
+z-index:2;
+}
+
+.hero-content h1{
+font-size:52px;
+margin-bottom:10px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.hero-content button{
+padding:14px 30px;
+background:#ff7a00;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero-content button:hover{
+background:#ff5400;
+}
+
+/* DESTINATIONS */
+
+.destinations{
+padding:70px 60px;
+text-align:center;
+}
+
+.destinations h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.places{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+/* CARDS */
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+margin:15px 0 5px;
+}
+
+.card p{
+padding:0 15px 20px;
+font-size:14px;
+}
+
+/* WHY CHOOSE US */
+
+.why-us{
+background:#eef3f9;
+padding:70px 60px;
+text-align:center;
+}
+
+.why-us h2{
+font-size:30px;
+margin-bottom:40px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.feature:hover{
+transform:scale(1.05);
+}
+
+/* GALLERY */
+
+.gallery{
+padding:70px 60px;
+text-align:center;
+}
+
+.gallery h2{
+font-size:30px;
+margin-bottom:40px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery-grid img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+transition:0.4s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+/* FEEDBACK */
+
+.feedback{
+background:#f0f4f8;
+padding:70px 60px;
+text-align:center;
+}
+
+.feedback h2{
+margin-bottom:40px;
+}
+
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.review{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review h4{
+margin-top:15px;
+color:#1e3c72;
+}
+
+/* CONTACT */
+
+.contact{
+padding:70px 60px;
+text-align:center;
+background:white;
+}
+
+.contact a{
+color:#1e3c72;
+font-weight:bold;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:#1e3c72;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:100;
+}
+
+.whatsapp-float img{
+width:60px;
+height:60px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+.hero-content h1{
+font-size:34px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+} 
